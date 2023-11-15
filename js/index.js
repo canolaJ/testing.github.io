@@ -21,26 +21,30 @@ $('#input-file').on('change', () => {
         image.src = imagenUrl
 
         cropper = new Cropper(image, {
-            aspectRatio: 1, // es la proporción en la que queremos que recorte en este caso 1:1
+            aspectRatio: 2/3, // es la proporción en la que queremos que recorte en este caso 1:1
             preview: '.img-sample', // contenedor donde se va a ir viendo en tiempo real la imagen cortada
             zoomable: true, //Para que no haga zoom 
             viewMode: 1, //Para que no estire la imagen al contenedor
             responsive: false, //Para que no reacomode con zoom la imagen al contenedor
             dragMode: 'none', //Para que al arrastrar no haga nada
             cropBoxResizable:false,
-            minContainerWidth:0,
+            minContainerWidth:672,
             minContainerHeight:0,
-            minCanvasWidth:0,
-            minCanvasHeight:0,
-            minCropBoxWidth:0,
-            minCropBoxHeight:0,
+            minCanvasWidth:672,
+            minCanvasHeight:1050,
+            minCropBoxWidth:672,
+            minCropBoxHeight:1050,
             ready(){ // metodo cuando cropper ya este activo, le ponemos el alto y el ancho del contenedor de cropper al 100%
                 document.querySelector('.cropper-container').style.width = '100%'
                 document.querySelector('.cropper-container').style.height = '100%'
                 cropper.setCropBoxData({
                     width: 100,
-                    height: 100,
+                    height: 1050,
                 });
+                // cropper.getCroppedCanvas({
+                //     width: 672,
+                //     height: 1050,
+                //   });
             }
         })
 
