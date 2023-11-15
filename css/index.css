@@ -1,18 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+@font-face {
+    font-family: 'HindVadodara_Regular';
+    src: url(../fonts/HindVadodara_Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'HindVadodara_SemiBold';
+    src: url(../fonts/HindVadodara_SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'HindVadodara_Bold';
+    src: url(../fonts/HindVadodara_Bold.ttf);
+    font-weight: 700;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'HindVadodara_Regular';
 }
 
+
 :root{
-    --primary-color: rgb(58,79,105);
-    --secundary-color: rgb(157,167,180);
-    --thir-color: rgb(233,95,133);
-    --primary-color-hover: rgb(30, 50, 75);
-    --secundary-color-hover:rgb(110, 116, 124);
+    --primary-color: #00DBB3;
+    --secundary-color: rgb(255,255,255);
+    --thir-color: #1E786F;
+    --primary-color-hover: #00dbb3d7;
+    --secundary-color-hover:rgb(255, 255, 255);
 }
 
 h1{
@@ -168,9 +188,17 @@ h1{
 }
 .modal-footer .primary{
     background-color: var(--primary-color);
+    color: var(--thir-color);
+    font-family: 'HindVadodara_SemiBold';
+    border-radius: 100px;
 }
 .modal-footer .secundary{
     background-color: var(--secundary-color);
+    color: var(--thir-color);
+    border: 1px solid #1E786F;
+    font-family: 'HindVadodara_SemiBold';
+    border-radius: 100px;
+
 }
 .modal-footer .primary:hover{
     background-color: var(--primary-color-hover);
