@@ -109,7 +109,8 @@ h1{
     padding: 20px;
 }
 .modal-content{
-    width: 1200px;
+    height: 1050px;
+    width: 672px;
     margin: auto;
     background-color: rgb(250, 250, 250);
     border-radius: 10px;
@@ -134,7 +135,7 @@ h1{
     padding: 18px 10px;
 }
 .modal-body .content-imagen-cropper{
-    width: 80%;
+    width: 100%;
     height: 400px;
     padding: 5px;
     outline: 1px solid var(--thir-color);
@@ -160,13 +161,12 @@ h1{
     background-image: url("../img/card_tras.png");
 } */
 
-.img-card
-{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin-top: 0;
-    margin-left: 0;
+.image-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1050px;
+    width: 672px;
 }
 
 .modal-content .modal-footer{
