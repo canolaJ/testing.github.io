@@ -37,14 +37,10 @@ $('#input-file').on('change', () => {
             ready(){ // metodo cuando cropper ya este activo, le ponemos el alto y el ancho del contenedor de cropper al 100%
                 document.querySelector('.cropper-container').style.width = '100%'
                 document.querySelector('.cropper-container').style.height = '100%'
-                cropper.setCropBoxData({
-                    width: 100,
-                    height: 1050,
-                });
-                // cropper.getCroppedCanvas({
-                //     width: 672,
+                // cropper.setCropBoxData({
+                //     width: 100,
                 //     height: 1050,
-                //   });
+                // });
             }
         })
 
