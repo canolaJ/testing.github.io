@@ -3,19 +3,22 @@
 
 @font-face {
     font-family: 'HindVadodara_Regular';
-    src: url(../fonts/HindVadodara_Regular.ttf);
+    /* src: url(../fonts/HindVadodara_Regular.ttf); */
+    src: url(../css/HindVadodara_Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'HindVadodara_SemiBold';
-    src: url(../fonts/HindVadodara_SemiBold.ttf);
+    /* src: url(../fonts/HindVadodara_SemiBold.ttf); */
+    src: url(../css/HindVadodara_SemiBold.ttf);
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'HindVadodara_Bold';
-    src: url(../fonts/HindVadodara_Bold.ttf);
+    /* src: url(../fonts/HindVadodara_Bold.ttf); */
+    src: url(../css/HindVadodara_Bold.ttf);
     font-weight: 700;
 }
 
@@ -40,6 +43,7 @@ h1{
     text-align: center;
     margin: 50px auto 15px auto;
     color: var(--thir-color);
+    font-family: 'HindVadodara_Bold';
 }
 .container{
     width: 672px;
