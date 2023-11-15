@@ -26,21 +26,17 @@ $('#input-file').on('change', () => {
             zoomable: true, //Para que no haga zoom 
             viewMode: 1, //Para que no estire la imagen al contenedor
             responsive: false, //Para que no reacomode con zoom la imagen al contenedor
-            dragMode: 'none', //Para que al arrastrar no haga nada
+            dragMode: 'move', //Para que al arrastrar no haga nada
             cropBoxResizable:false,
-            minContainerWidth:672,
+            minContainerWidth:0,
             minContainerHeight:0,
-            minCanvasWidth:672,
+            minCanvasWidth:650,
             minCanvasHeight:1050,
-            minCropBoxWidth:672,
-            minCropBoxHeight:1050,
+            minCropBoxWidth:650,
+            minCropBoxHeight:1030,
             ready(){ // metodo cuando cropper ya este activo, le ponemos el alto y el ancho del contenedor de cropper al 100%
                 document.querySelector('.cropper-container').style.width = '100%'
                 document.querySelector('.cropper-container').style.height = '100%'
-                // cropper.setCropBoxData({
-                //     width: 100,
-                //     height: 1050,
-                // });
             }
         })
 
