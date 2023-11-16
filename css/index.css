@@ -244,8 +244,20 @@ h1{
     }
     .group{
         width: 100%;
-        height: 1050px;
+        height: 100vh;
         margin: auto;
+    }
+    .group .crop-image {
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+    }
+    .image-card{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
     }
     .group .label-file{
         padding: 10px 10px 30px 10px;
@@ -258,6 +270,9 @@ h1{
     .modal-body .content-imagen-cropper{
         width: 100%;
     }
+    /* .modal-content{
+        max-height: 80vh;
+    } */
     .modal-content .modal-footer{
         flex-direction: column;
         gap: 5px;
@@ -270,7 +285,7 @@ h1{
     }
     .group{
         width: 100%;
-        height: 1050px;
+        max-height: 100vh;
         margin: auto;
     }
 }
