@@ -21,7 +21,7 @@ $('#input-file').on('change', () => {
         image.src = imagenUrl
 
         cropper = new Cropper(image, {
-            aspectRatio: 2/3, // es la proporción en la que queremos que recorte en este caso 1:1
+            aspectRatio: 1/2, // es la proporción en la que queremos que recorte en este caso 1:1
             preview: '.img-sample', // contenedor donde se va a ir viendo en tiempo real la imagen cortada
             zoomable: true, //Para que no haga zoom 
             viewMode: 1, //Para que no estire la imagen al contenedor
@@ -73,6 +73,7 @@ $('#cut').on('click', () => {
     canva.toBlob(function(blob){
         let url_cut = URL.createObjectURL(blob)
         crop_image.src = url_cut;
+        console.log(url_cut);
     })
 
     image.src = "";
